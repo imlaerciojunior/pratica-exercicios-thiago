@@ -11,7 +11,7 @@ function Exercicio04() {
     const filterUsuarios = usuarios.filter((item) => item.idade >= 20)
   return (
     <div>
-        <h2>Exercicio04</h2>
+        <h1>Exercicio 4</h1>
         <div>
             {filterUsuarios.map((item) => (
                 <li>{`${item.nome}: ${item.idade}anos`}</li>

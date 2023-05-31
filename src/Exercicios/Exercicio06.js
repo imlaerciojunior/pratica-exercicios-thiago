@@ -1,20 +1,37 @@
 import React from 'react'
 
-function Exercicio06() {
-    const cores = ['vermelho', 'azul', 'amarelo', 'verde', 'roxo'];
+// const Exercicio06 = () => {
+//   const cores = ["vermelho", "azul", "amarelo", "verde", "roxo"];
+//   const corPrima = "vermelho";
 
-    const colorPrimary = cores.filter((item) => item === "vermelho" || item === "azul" || item === "amarelo")
-    
-    const retornaCor = () => {
-      
-    }
+//   const coresSearch = [];
+
+//   cores.forEach((cor) => {
+//     if (["vermelho", "azul", "amarelo"].includes(cor)) {
+//       coresSearch.push(cor);
+//     }
+//   })
+
+const Exercicio06 = () => {
+const cores = ["vermelho", "azul", "amarelo", "verde", "roxo"];
+
+  const coresPrimarias = cores.filter((item) =>
+    ["vermelho", "azul", "amarelo"].includes(item)
+  );
 
   return (
     <div>
-        <h2>Exercicio06</h2>
-
+      <h1>Exercio 6</h1>
+      {coresPrimarias.map((cor, index) => (
+        <div key={index}>
+          <ul>
+            <li>{cor}</li>
+          </ul>
+        </div>
+      ))}
     </div>
   )
 }
+
 
 export default Exercicio06

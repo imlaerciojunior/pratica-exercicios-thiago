@@ -11,7 +11,7 @@ function Exercicio05() {
         const filterProdutos = produtos.filter((item) => item.preco > 30)
   return (
     <div>
-        <h2>Exercicio05</h2>
+        <h1>Exercicio 5</h1>
         <div key={produtos.id}>
             {filterProdutos.map((item) => (
                 <li>{`${item.nome}: R$${item.preco}`}</li>

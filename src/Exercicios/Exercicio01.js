@@ -6,7 +6,7 @@ function Exercicio01() {
 
   return (
     <div>
-    <h1>Exercicio01</h1>
+    <h1>Exercicio 1</h1>
         {nomes.map((item, index) =>(
             <div key={index}>
                 <li>{item}</li>

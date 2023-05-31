@@ -8,7 +8,7 @@ function Exercicio03() {
 
   return (
     <div>
-        <h2>Exercicio03</h2>
+        <h1>Exercicio 3</h1>
         {numerosPares.map((num) => (
             <span>Numero Par: {`${num} `}</span>
 
